@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Worker Details</title>
+  <link rel="stylesheet" href="details.css">
+</head>
+<body>
+
+<div class="service-card large" id="detailCard">
+</div>
+
+<script>
+  // URL parametrlərini oxu
+  const params = new URLSearchParams(window.location.search);
+
+  const name = params.get("name");
+  const city = params.get("city");
+  const img = params.get("img");
+  const rating = params.get("rating");
+
+  // HTML-ə yaz
+  const card = document.getElementById("detailCard");
+  card.innerHTML = `
+    <img src="${img}" class="icon">
+    <h2>${name}</h2>
+    <h3>⭐ ${rating}</h3>
+    <p>Şəhər: ${city}</p>
+
+    <button onclick="history.back()">Geri qayıt</button>
+  `;
+</script>
+
+</body>
+</html>

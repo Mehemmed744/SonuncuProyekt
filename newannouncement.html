@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elan Yerləşdir</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+     <a href="index.html" class="logo">
+  <span class="icon">
+    <img class="icon" src="/image/logo_transparent.png" alt="">
+  </span>
+  <span>İşTap</span>
+</a>
+
+
+    <nav>
+      <a href="jobs.html" id="ishtap">İş tap</a>
+      <a href="elan.html" class="active">Elan yerləşdir</a>
+      <a href="worker.html" id="findWorkerBtn">İşçi tap</a>
+    </nav>
+
+    <div class="nav-buttons">
+      <a href="login.html" class="login">Daxil ol</a>
+      <a href="signup.html">
+        <button class="btn-primary">Yeni Hesab</button>
+      </a>
+    </div>
+  </header>
+
+  <section class="post-job">
+    <h1>Yeni Elan Yerləşdir</h1>
+    <p class="section-desc">Peşəkar ustalar üçün elan yaradın və asanlıqla işçi tapın.</p>
+
+    <div class="job-form-container">
+      <form class="job-form">
+        <label for="job-title">Elanın Başlığı</label>
+        <input type="text" id="job-title" placeholder="Məs: Elektrik təmiri" required />
+
+        <label for="job-category">Xidmət Növü</label>
+        <select id="job-category" required>
+          <option value="">Seçin</option>
+          <option value="mechanic">Avadanlıq təmiri</option>
+          <option value="cleaning">Xidmətçi</option>
+          <option value="electrician">Elektrik</option>
+          <option value="plumber">Santexnik</option>
+          <option value="painter">Rəssam</option>
+          <option value="driver">Sürücü</option>
+          <option value="gardener">Bağban</option>
+          <option value="mover">Əmlak daşıma</option>
+        </select>
+
+        <label for="job-location">Məkan</label>
+        <input type="text" id="job-location" placeholder="Məs: Bakı, Nərimanov" required />
+
+        <label for="job-description">Elanın Təfsilatı</label>
+        <textarea id="job-description" placeholder="Elanın detallarını daxil edin..." rows="6" required></textarea>
+
+        <label for="job-price">Qiymət (AZN)</label>
+        <input type="number" id="job-price" placeholder="Məs: 50" required />
+
+        <button type="submit" class="btn-primary">Elanı Yerləşdir</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h3>Usta</h3>
+        <p>Gündəlik işlər, peşəkar ustalar, rahat axtarış.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Tez keçidlər</h4>
+        <ul>
+          <li><a href="index.html">Ana Səhifə</a></li>
+          <li><a href="jobs.html">İş tap</a></li>
+          <li><a href="elan.html">Elan yerləşdir</a></li>
+          <li><a href="worker.html">İşçi tap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Əlaqə</h4>
+        <p>Email: support@ishtap.az</p>
+        <p>Tel: +994 50 123 45 67</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Usta. Bütün hüquqlar qorunur.</p>
+    </div>
+  </footer>
+</body>
+</html>
